@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilisuma Merga | Robotics, Quantum Computing & Applied Mathematics Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Academic and science portfolio of Bilisuma Merga. SAT 1580, ESSLCE #14 in Ethiopia (100/100 Math), SSRN Top 10 author in Quantum Cryptanalysis, Autonomous Drone Flight Controller developer.">
+  <meta name="author" content="Bilisuma  Merga">
+  <meta name="keywords" content="Bilisuma Merga, Portfolio, Robotics, Autonomous Drone, Quantum Computing, Shor Algorithm, RSA Cryptography, ODA Boarding School, SAT 1580, Ethiopia">
+  <link rel="canonical" href="https://jabesa-bilisuma.github.io/">
+
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bilisuma Merga | Academic & Science Portfolio">
+  <meta property="og:description" content="Candidate for Undergraduate Admissions. SAT 1580 (>99th percentile), ESSLCE #14 in Ethiopia (100 in Math), Published Quantum Cryptanalysis Author (SSRN), Autonomous Drone Avionics Developer.">
+  <meta property="og:image" content="assets/images/bilisuma_portrait.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Leaflet CSS for Interactive GIS Drone Ground Station -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       SITE NAVIGATION
+       ========================================================================== -->
+  <nav class="site-nav" id="site-nav">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Bilisuma Merga Homepage">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <div class="brand-title">
+          <span class="brand-name">Bilisuma Merga</span>
+          <span class="brand-subtitle">Admissions Portfolio</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="nav-links-menu">
+        <li><a href="#executive-brief" class="nav-link">Brief</a></li>
+        <li><a href="#drone-project" class="nav-link">Autonomous Drone</a></li>
+        <li><a href="#quantum-research" class="nav-link">Quantum Research</a></li>
+        <li><a href="#verification-vault" class="nav-link">Credentials Vault</a></li>
+        <li><a href="#leadership-impact" class="nav-link">Impact & Leadership</a></li>
+        <li><a href="#terminal-section" class="nav-link">CLI Terminal</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn-nav-admissions trigger-admissions-deck" type="button" aria-label="Open Admissions Quick Brief">
+          <span class="pulse-dot"></span>
+          <span>Admissions Brief</span>
+        </button>
+        <button class="btn-mobile-toggle" id="btn-mobile-toggle" type="button" aria-label="Toggle navigation menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <header class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        
+
+
+        <div class="hero-subtitle">
+          <span>Bilisuma Merga</span>
+          <span style="color:var(--text-muted);">|</span>
+          <span style="color:var(--accent-cyan); font-weight:500; font-size:1.1rem;">Sheger City / Adama, Ethiopia</span>
+        </div>
+
+        <p class="hero-bio">
+          Alumnus of ODA Special Boarding School.
+        </p>
+
+        <!-- 4 Key Impact Metric Badges -->
+        <div class="hero-metrics-bar">
+          <div class="metric-item">
+            <span class="metric-val">1580</span>
+            <span class="metric-label">SAT Score (&gt;99th %ile)<br>790 Math • 790 R&amp;W</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-val emerald">100/100</span>
+            <span class="metric-label">National Math (ESSLCE)<br>Rank #14 in Ethiopia</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-val purple">Top 10</span>
+            <span class="metric-label">SSRN Downloads<br>Quantum Cryptanalysis</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-val">682 B</span>
+            <span class="metric-label">Dynamic MCU RAM<br>33% SRAM 8-State FSM</span>
+          </div>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#drone-project" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+            Interactive Drone Simulator
+          </a>
+          <a href="#quantum-research" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><path d="M10.4 13.6L6.5 17.5"/><path d="M13.6 10.4L17.5 6.5"/></svg>
+            Quantum Paper
+          </a>
+          <a href="#verification-vault" class="btn btn-outline-cyan">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Verified Credentials
+          </a>
+          <a href="assets/docs/Bilisuma_Merga_CV.pdf" download class="btn btn-secondary btn-sm" title="Download Official CV (PDF)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            CV (PDF)
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Visual Card -->
+      <div class="hero-visual-card">
+        <div class="hero-image-wrapper">
+          <img src="assets/images/bilisuma_portrait.jpg" alt="Bilisuma Jabesa Merga in the Electronics and Robotics Laboratory" loading="eager">
+          <div class="hero-floating-badge">
+            <div>
+              <div class="title">Bilisuma Merga</div>
+              <div class="desc">ODA Special Boarding School Class of 2024</div>
+            </div>
+            <div class="tag">Verified Candidate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       SECTION: ADMISSIONS EXECUTIVE BRIEF
+       ========================================================================== -->
+  <section class="section section-alt" id="executive-brief">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-pretitle">Admissions Committee Snapshot</div>
+        <h2 class="section-title">The Three Pillars of Candidacy</h2>
+        <p class="section-desc">
+          A high-density overview of academic rigor, intellectual vitality, and real-world leadership crafted for university admissions evaluators.
+        </p>
+      </div>
+
+      <div class="brief-grid">
+        <!-- Card 1 -->
+        <div class="brief-card">
+          <div class="brief-card-header">
+            <div class="brief-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <h3 class="brief-card-title">Academic &amp; Quantitative Rigor</h3>
+          </div>
+          <ul class="brief-points">
+            <li class="brief-point">
+              <span class="brief-point-icon">✓</span>
+              <span><strong>1580 SAT Score:</strong> 790 Math (99th %ile), 790 Reading &amp; Writing (&gt;99th %ile). Highest performance bands (680–800) across all 8 domains.</span>
+            </li>
+            <li class="brief-point">
+              <span class="brief-point-icon">✓</span>
+              <span><strong>ESSLCE National Exam:</strong> Ranked <strong>#14 in Ethiopia</strong> out of 100,000+ candidates. Ranked <strong>#4 in Oromia</strong> and <strong>#1 in school</strong>.</span>
+            </li>
+            <li class="brief-point">
+              <span class="brief-point-icon">✓</span>
+              <span><strong>Perfect 100/100 in Mathematics:</strong> 97 in Chemistry, 97 in Biology, 96 in Physics (Cumulative 559/600, 93.16% avg).</span>
+            </li>
+            <li class="brief-point">
+              <span class="brief-point-icon">✓</span>
+              <span><strong>Ethiopian Math Olympiad Finalist:</strong> Top-tier competitor in national mathematics problem-solving.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="brief-card">
+          <div class="brief-card-header">
+            <div class="brief-icon purple">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3 class="brief-card-title">Intellectual Vitality &amp; Research</h3>
+          </div>
+          <ul class="brief-points">
+            <li class="brief-point">
+              <span class="brief-point-icon">✓</span>
+              <span><strong>Published Quantum Scholar (SSRN):</strong> Authored <em>"The Cruciality of Shor's Algorithm in Breaking RSA Encryption"</em>. Ranked Top 10 in Theoretical CS Downloads in month 1.</span>
+            </li>
+            <li class="brief-point">
+              <span class="brief-point-icon">✓</span>
+              <span><strong>Autonomous Quadcopter Avionics:</strong> Architected complete GIS-to-hardware pipeline. Downsamples vector urban routes in Python and compiles into static C++ headers.</span>
+            </li>
+            <li class="brief-point">
+              <span class="brief-point-icon">✓</span>
+              <span><strong>Embedded Systems Engineering:</strong> Wrote deterministic 8-state C++ FSM running on 16MHz ATmega328P. Achieved 100% waypoint capture in 682 bytes RAM (33% SRAM).</span>
+            </li>
+            <li class="brief-point">
+              <span class="brief-point-icon">✓</span>
+              <span><strong>Sensor Fusion &amp; Failsafes:</strong> Integrated U-Blox NEO-6M GPS, InvenSense MPU-6050 6-axis IMU, active IR collision detection, and ball tilt shutdown.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="brief-card">
+          <div class="brief-card-header">
+            <div class="brief-icon emerald">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="brief-card-title">Leadership &amp; Community Impact</h3>
+          </div>
+          <ul class="brief-points">
+            <li class="brief-point">
+              <span class="brief-point-icon">✓</span>
+              <span><strong>Teen Research Association:</strong> Selected from 500+ applicants to lead curriculum design for 300+ emerging high school researchers across Ethiopia.</span>
+            </li>
+            <li class="brief-point">
+              <span class="brief-point-icon">✓</span>
+              <span><strong>Rural STEM Mentorship:</strong> Taught 7th-grade math and physics at Embao Primary School, boosting Grade 8 National Ministry exam pass rates by 10%.</span>
+            </li>
+            <li class="brief-point">
+              <span class="brief-point-icon">✓</span>
+              <span><strong>Coffee Supply Optimization:</strong> Modeled seasonal demand curves for 2,000 kg/day coffee bean distribution, slashing inventory spoilage by 15%.</span>
+            </li>
+            <li class="brief-point">
+              <span class="brief-point-icon">✓</span>
+              <span><strong>China-Ethiopia Friendship Scholarship:</strong> Conferred jointly by Addis Ababa University &amp; Chinese Embassy for national merit.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: AUTONOMOUS DRONE PROJECT & INTERACTIVE GROUND STATION
+       ========================================================================== -->
+  <section class="section" id="drone-project">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-pretitle">Engineering Showcase 01</div>
+        <h2 class="section-title">Autonomous GPS Waypoint Quadcopter &amp; GIS Ground Station</h2>
+        <p class="section-desc">
+          A full-stack embedded aerospace engineering project: converting OpenStreetMap vector graphs into downsampled C++ PROGMEM headers and executing an 8-state deterministic FSM flight controller within 682 bytes of SRAM.
+        </p>
+      </div>
+
+      <!-- Technical Deep-Dive Tabs -->
+      <div class="drone-spec-tabs">
+        <div class="tabs-nav">
+          <button class="tab-btn active" data-tab="tab-pipeline" type="button">1. System Pipeline</button>
+          <button class="tab-btn" data-tab="tab-fsm" type="button">2. 8-State FSM Firmware</button>
+          <button class="tab-btn" data-tab="tab-hardware" type="button">3. Hardware &amp; Circuits</button>
+          <button class="tab-btn" data-tab="tab-gallery" type="button">4. Workbench Prototype Gallery</button>
+          
+        </div>
+
+        <!-- Tab 1: System Pipeline -->
+        <div class="tab-content active" id="tab-pipeline">
+          <div class="spec-grid-2col">
+            <div class="spec-diagram-card">
+              <img src="assets/images/drone_pipeline_architecture.png" alt="Drone Architecture Pipeline Diagram">
+            </div>
+            <div class="spec-info-card">
+              <h4>Three-Stage Decoupled Avionics Architecture</h4>
+              <p>
+                <strong>Stage 1 (High-Level Python Host):</strong> Queries OpenStreetMap vector networks via OSMNx and NetworkX to compute geographic shortest paths across real Ethiopian urban corridors. Trajectories are downsampled via Douglas-Peucker spatial compression to guarantee MCU SRAM safety.
+              </p>
+              <p>
+                <strong>Stage 2 (Header Compilation):</strong> Exports coordinates into fixed-width C++ struct arrays with <code>PROGMEM</code> macros, allowing the 8-bit MCU to access full paths without dynamic memory allocation or heap fragmentation risks.
+              </p>
+              <p>
+                <strong>Stage 3 (Closed-Loop AVR Firmware):</strong> Onboard ATmega328P runs an interrupt-safe 700ms control cadence, parsing NMEA strings from NEO-6M GPS, angular kinematics from MPU-6050, and proximity alerts from forward IR sensors.
+              </p>
+              <a href="assets/docs/Drone_Engineering_Documentation.pdf" download class="btn btn-secondary btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download Full 5-Page Technical PDF (143 KB)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: 8-State FSM Firmware -->
+        <div class="tab-content" id="tab-fsm">
+          <div class="spec-grid-2col">
+            <div class="spec-info-card">
+              <h4>Deterministic Non-Blocking Control Loop</h4>
+              <p>
+                Rather than using blocking delays (<code>delay()</code>) that blind the microcontroller to incoming telemetry, the firmware operates on a precise 700ms <code>millis()</code> scheduler driving a deterministic 8-state Finite State Machine:
+              </p>
+              <ul style="margin-left: 1.25rem; font-size: 0.92rem; color: var(--text-secondary); display:flex; flex-direction:column; gap:0.4rem;">
+                <li><code>STATE_IDLE</code>: Motors disengaged; awaits UART commands (START, STOP, LIST, RTH).</li>
+                <li><code>STATE_NAVIGATING</code>: Calculates Great Circle bearing and Haversine distance to active waypoint; adjusts differential motor thrust.</li>
+                <li><code>STATE_AVOIDING_OBSTACLE</code>: Forward IR detection triggers immediate starboard evasive maneuver until line-of-sight clears.</li>
+                <li><code>STATE_WAITING</code>: 5.0m arrival radius triggers 5,000ms loiter/payload delivery hold.</li>
+                <li><code>STATE_RETURNING (RTH)</code>: Automatically reverses waypoint array stack to navigate drone back to launch origin.</li>
+                <li><code>STATE_EMERGENCY_HALT</code>: Hardware interrupt immediately cuts PWM to all 4 motors if ball tilt sensor detects airframe inversion (&gt;45° tilt).</li>
+              </ul>
+            </div>
+            <div class="code-preview-box">
+<span style="color:#64748b;">// Non-blocking 700ms flight control interval</span>
+<span style="color:#c084fc;">void</span> loop() {
+  <span style="color:#c084fc;">unsigned long</span> currentMillis = millis();
+  <span style="color:#38bdf8;">checkSafetyTiltSensor()</span>; <span style="color:#64748b;">// Immediate failsafe check</span>
+
+  <span style="color:#c084fc;">if</span> (currentMillis - prevMillis &gt;= CONTROL_INTERVAL) {
+    prevMillis = currentMillis;
+    
+    <span style="color:#c084fc;">switch</span> (currentState) {
+      <span style="color:#c084fc;">case</span> STATE_NAVIGATING:
+        <span style="color:#38bdf8;">readTelemetry()</span>;
+        <span style="color:#c084fc;">if</span> (analogRead(PIN_IR) &gt; OBSTACLE_THRESH) {
+          currentState = STATE_AVOIDING_OBSTACLE;
+        } <span style="color:#c084fc;">else</span> {
+          <span style="color:#38bdf8;">trackWaypointVector()</span>;
+        }
+        <span style="color:#c084fc;">break</span>;
+      <span style="color:#c084fc;">case</span> STATE_AVOIDING_OBSTACLE:
+        <span style="color:#38bdf8;">executeStarboardBias()</span>;
+        <span style="color:#c084fc;">break</span>;
+      <span style="color:#c084fc;">case</span> STATE_RETURNING:
+        <span style="color:#38bdf8;">reverseWaypointStack()</span>;
+        <span style="color:#c084fc;">break</span>;
+    }
+  }
+}
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Hardware & Circuits -->
+        <div class="tab-content" id="tab-hardware">
+          <div class="spec-grid-2col">
+            <div class="spec-info-card">
+              <h4>Hardware Architecture &amp; Power Regulation</h4>
+              <p>
+                <strong>Dual-Rail Power Topology:</strong> Quadcopter high-current coreless DC lift motors produce significant inductive back-EMF that resets sensitive microcontrollers. The system implements isolated dual rails:
+              </p>
+              <ul style="margin-left: 1.25rem; font-size: 0.92rem; color: var(--text-secondary); display:flex; flex-direction:column; gap:0.4rem; margin-bottom:1rem;">
+                <li><strong>High-Current Rail (9V):</strong> Powers four DC motors switched via 2N1711 NPN BJT transistors with 100Ω base-protection resistors and flyback suppression diodes.</li>
+                <li><strong>Regulated Logic Rail (5V):</strong> Powers ATmega328P MCU, U-Blox NEO-6M GPS receiver (SoftwareSerial on D2/D3), and InvenSense MPU-6050 (Hardware I2C on A4/A5).</li>
+                <li><strong>Safety Interlocks:</strong> Omnidirectional ball tilt switch on D12 with internal pull-up resistor. Active-LOW interrupt disengages motor bases instantly upon frame inversion.</li>
+              </ul>
+              <div class="badge badge-emerald">Proteus VSM Simulation Validated • 100% Waypoint Capture</div>
+            </div>
+            <div class="spec-diagram-card">
+              <img src="assets/images/drone_motor_circuit.jpg" alt="Drone Motor Circuit and Breadboard Layout">
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Prototype Gallery -->
+        <div class="tab-content" id="tab-gallery">
+          <div class="photo-gallery-grid">
+            <div class="gallery-card">
+              <img src="assets/images/drone_prototype_top.jpg" alt="Quadcopter physical airframe showing central Arduino Uno and transistor breadboards">
+              <div class="gallery-caption">Assembled Quadcopter Prototype (Airframe &amp; Actuators)</div>
+            </div>
+            <div class="gallery-card">
+              <img src="assets/images/bilisuma_lab.jpg" alt="Bilisuma at workbench testing avionics circuits with digital trainer">
+              <div class="gallery-caption">Benchtop Firmware Debugging with Oscilloscope Station</div>
+            </div>
+            <div class="gallery-card">
+              <img src="assets/images/bilisuma_presenting.jpg" alt="Bilisuma presenting working quadcopter prototype">
+              <div class="gallery-caption">Quadcopter Hardware Presentation (EGATE Summer Camp)</div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: QUANTUM COMPUTING & SHOR'S ALGORITHM
+       ========================================================================== -->
+  <section class="section section-alt" id="quantum-research">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-pretitle">Research Showcase 02</div>
+        <h2 class="section-title">Quantum Cryptanalysis: Shor's Algorithm vs. RSA</h2>
+        <p class="section-desc">
+          Published theoretical review analyzing quantum superposition, Quantum Fourier Transform (QFT) period finding and the impending obsolescence of classical integer factorization cryptosystems.
+        </p>
+      </div>
+
+      <div class="quantum-feature-grid">
+        <!-- Research Paper Overview Card -->
+        <div class="quantum-paper-card">
+          <div class="paper-meta-badge">
+            <span class="badge badge-purple">SSRN Elsevier Preprint</span>
+            <span class="badge badge-cyan">Published Nov 2024</span>
+            <span class="badge badge-emerald">SSRN ID: 4992090</span>
+          </div>
+
+          <h3 class="paper-title">
+            The Cruciality of Shor's Algorithm in Breaking RSA Encryption
+          </h3>
+          <div class="paper-author">Author: Bilisuma Jabesa Merga (Independent High School Scholar)</div>
+
+          <p class="paper-abstract">
+            <strong>Abstract:</strong> Public-key cryptography, particularly RSA, relies on the classical intractability of factoring large composite semiprimes \(N = p \cdot q\). For classical architectures, algorithms like the General Number Field Sieve (GNFS) require sub-exponential time. Shor’s algorithm fundamentally circumvents this barrier by reducing factorization to order finding. By exploiting quantum superposition and constructive phase interference via the Quantum Fourier Transform (QFT), Shor’s algorithm evaluates modular exponentiation periods in polynomial time \(\mathcal{O}((\log N)^3)\), proving that fault-tolerant quantum computers will completely compromise RSA private keys.
+          </p>
+
+          <div class="paper-stats-row">
+            <div class="stat-card-mini">
+              <div class="val">Top 10</div>
+              <div class="lbl">SSRN Theoretical CS Downloads</div>
+            </div>
+            <div class="stat-card-mini">
+              <div class="val">1,350+</div>
+              <div class="lbl">Global Scholar Views</div>
+            </div>
+            <div class="stat-card-mini">
+              <div class="val">150+</div>
+              <div class="lbl">Full Paper Downloads</div>
+            </div>
+          </div>
+
+          <div class="paper-actions">
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4992090" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              View on SSRN (Official)
+            </a>
+            <a href="assets/docs/SSRN_Quantum_Cryptanalysis_Paper.pdf" download class="btn btn-secondary btn-sm">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download Paper (PDF)
+            </a>
+            <a href="assets/docs/Research_Abstract_Shors_Algorithm.pdf" download class="btn btn-outline-cyan btn-sm">
+              Abstract (PDF)
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: VERIFICATION VAULT (ACADEMIC CREDENTIALS & HONORS)
+       ========================================================================== -->
+  <section class="section" id="verification-vault">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-pretitle">Verifiable Proof of Excellence</div>
+        <h2 class="section-title">Academic Credentials &amp; Honors Vault</h2>
+        <p class="section-desc">
+          Official government certificates, standardized examination transcripts and international diplomatic scholarships with direct verification links and high-resolution document previews.
+        </p>
+      </div>
+
+      <div class="certs-grid">
+        <!-- 1. ESSLCE National Exam -->
+        <div class="cert-card">
+          <div class="cert-thumbnail-wrapper" data-cert-id="esslce">
+            <img src="assets/images/cert_esslce_national.jpg" alt="Official Ethiopian Secondary School Leaving Certificate Examination transcript">
+            <div class="cert-overlay-zoom">🔍 Click to Inspect</div>
+          </div>
+          <div class="cert-content">
+            <div class="cert-badge-row">
+              <span class="badge badge-emerald">Rank #14 in Nation</span>
+              <span class="mono" style="font-size:0.75rem; color:var(--text-muted);">2024</span>
+            </div>
+            <h3 class="cert-title">ESSLCE National Leaving Certificate</h3>
+            <div class="cert-issuer">Ministry of Education &amp; EAES Ethiopia</div>
+            <p class="cert-desc">
+              Achieved <strong>559 / 600</strong> total score (93.16% average) with a <strong>perfect 100/100 in Mathematics</strong>, 97 in Chemistry, 97 in Biology, and 96 in Physics. Ranked #1 in school, #4 in Oromia, and #14 across all of Ethiopia.
+            </p>
+            <div class="cert-footer">
+              <span class="mono" style="color:var(--accent-cyan);">ID: AH56612372024KU</span>
+              <a href="https://verify.eaes.et/AH56612372024KU" target="_blank" rel="noopener noreferrer" class="btn-cert-verify">
+                Verify Online ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. China-Ethiopia Friendship Scholarship -->
+        <div class="cert-card">
+          <div class="cert-thumbnail-wrapper" data-cert-id="china_scholarship">
+            <img src="assets/images/cert_china_scholarship.jpg" alt="China-Ethiopia Friendship Scholarship Award Certificate">
+            <div class="cert-overlay-zoom">🔍 Click to Inspect</div>
+          </div>
+          <div class="cert-content">
+            <div class="cert-badge-row">
+              <span class="badge badge-purple">Diplomatic Award</span>
+              <span class="mono" style="font-size:0.75rem; color:var(--text-muted);">2024/25</span>
+            </div>
+            <h3 class="cert-title">China-Ethiopia Friendship Scholarship</h3>
+            <div class="cert-issuer">Addis Ababa University &amp; Chinese Embassy</div>
+            <p class="cert-desc">
+              Conferred jointly by the Academic President of Addis Ababa University and the Ambassador of the People's Republic of China in recognition of premier academic standing.
+            </p>
+            <div class="cert-footer">
+              <span class="mono" style="color:var(--accent-cyan);">Official Seal</span>
+              <span style="color:var(--text-muted); font-size:0.8rem;">Diplomatic Honors</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Oromia Regional Government Academic Excellence -->
+        <div class="cert-card">
+          <div class="cert-thumbnail-wrapper" data-cert-id="oromia_award">
+            <img src="assets/images/cert_oromia_award.jpg" alt="Oromia Regional Government Academic Excellence Award">
+            <div class="cert-overlay-zoom">🔍 Click to Inspect</div>
+          </div>
+          <div class="cert-content">
+            <div class="cert-badge-row">
+              <span class="badge badge-amber">Regional Distinction</span>
+              <span class="mono" style="font-size:0.75rem; color:var(--text-muted);">2024</span>
+            </div>
+            <h3 class="cert-title">Regional Academic Excellence Award</h3>
+            <div class="cert-issuer">Oromia Education Bureau Head</div>
+            <p class="cert-desc">
+              Awarded directly by Dr. Tolaa Bariisoo Gadaa, Head of Oromia Education Bureau, celebrating candidate's top ranking on the national university entrance examinations.
+            </p>
+            <div class="cert-footer">
+              <span class="mono" style="color:var(--accent-cyan);">Score: 559/600</span>
+              <span style="color:var(--text-muted); font-size:0.8rem;">Regional Bureau</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. STEMpower Ethiopia & Foka STEM Center -->
+        <div class="cert-card">
+          <div class="cert-thumbnail-wrapper" data-cert-id="stem_foka">
+            <img src="assets/images/cert_stem_foka.png" alt="STEMpower Ethiopia & Foka STEM Center Certificate">
+            <div class="cert-overlay-zoom">🔍 Click to Inspect</div>
+          </div>
+          <div class="cert-content">
+            <div class="cert-badge-row">
+              <span class="badge badge-cyan">Robotics &amp; Coding</span>
+              <span class="mono" style="font-size:0.75rem; color:var(--text-muted);">2023</span>
+            </div>
+            <h3 class="cert-title">Computer Science &amp; Electronics Distinction</h3>
+            <div class="cert-issuer">STEMpower Ethiopia &amp; Foka STEM Center</div>
+            <p class="cert-desc">
+              Recognized with highest recommendation following completion of the advanced 12-week programming &amp; circuits track.
+            </p>
+            <div class="cert-footer">
+              <span class="mono" style="color:var(--accent-cyan);">Ref: SPI/0073/2023</span>
+              <span style="color:var(--text-muted); font-size:0.8rem;">STEMpower Inc.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. ODA Boarding School Service & Leadership -->
+        <div class="cert-card">
+          <div class="cert-thumbnail-wrapper" data-cert-id="library_club">
+            <img src="assets/images/cert_library_club.jpg" alt="ODA Boarding School Library Club Certificate">
+            <div class="cert-overlay-zoom">🔍 Click to Inspect</div>
+          </div>
+          <div class="cert-content">
+            <div class="cert-badge-row">
+              <span class="badge badge-emerald">Service &amp; Leadership</span>
+              <span class="mono" style="font-size:0.75rem; color:var(--text-muted);">2024</span>
+            </div>
+            <h3 class="cert-title">Library Service &amp; Mentorship Recognition</h3>
+            <div class="cert-issuer">ODA Special Boarding School (Adama)</div>
+            <p class="cert-desc">
+              Showed exceptional voluntary service, academic tutoring and library administration support at Ethiopia's premier STEM boarding school.
+            </p>
+            <div class="cert-footer">
+              <span class="mono" style="color:var(--accent-cyan);">ODA School</span>
+              <span style="color:var(--text-muted); font-size:0.8rem;">Adama, Oromia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: LEADERSHIP, MENTORSHIP & ECONOMIC IMPACT
+       ========================================================================== -->
+  <section class="section section-alt" id="leadership-impact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-pretitle">Community &amp; Initiative</div>
+        <h2 class="section-title">Leadership, Mentorship &amp; Real-World Impact</h2>
+        <p class="section-desc">
+          Extending quantitative analysis and technical skills outside the classroom to empower secondary researchers, improve rural test scores, and optimize local agricultural logistics.
+        </p>
+      </div>
+
+      <div class="impact-timeline">
+        <!-- Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot-wrapper">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="timeline-content-card">
+            <div class="timeline-date">October 2025 – December 2025</div>
+            <h3 class="timeline-role">Curriculum Lead &amp; Mentor</h3>
+            <div class="timeline-org">Teen Research Association (Ethiopia)</div>
+            <ul class="timeline-bullets">
+              <li class="timeline-bullet">Selected from a competitive applicant pool of 500+ candidates nationwide.</li>
+              <li class="timeline-bullet">Designed the academic curriculum and workshop pedagogy for 300+ attendees at the Teen Research Conference 2025.</li>
+              <li class="timeline-bullet">Mentored junior scholars in scientific writing, methodology structuring, and academic literature synthesis.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot-wrapper emerald">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <div class="timeline-content-card">
+            <div class="timeline-date">June 2023 – August 2023</div>
+            <h3 class="timeline-role">Academic Advisor &amp; Volunteer Tutor</h3>
+            <div class="timeline-org">Embao Primary School</div>
+            <ul class="timeline-bullets">
+              <li class="timeline-bullet">Volunteered to teach foundational mathematics and classical physics to Grade 7 students.</li>
+              <li class="timeline-bullet">Mentored students preparing for national assessments; improved Grade 8th Ministry Exam passing rates by 10%.</li>
+              <li class="timeline-bullet">Awarded the "Top Mentor" recognition by school leadership for commitment to rural educational equity.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot-wrapper purple">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div class="timeline-content-card">
+            <div class="timeline-date">June 2021 – August 2023</div>
+            <h3 class="timeline-role">Operations &amp; Logistics Assistant</h3>
+            <div class="timeline-org">Jabesa Merga Coffee Trading</div>
+            <ul class="timeline-bullets">
+              <li class="timeline-bullet">Managed daily warehousing and distribution logistics for over 2,000 kg/day of raw and roasted coffee.</li>
+              <li class="timeline-bullet">Constructed predictive statistical models based on historical purchase patterns, cutting perishable waste by 15%.</li>
+              <li class="timeline-bullet">Streamlined weighing and packaging protocols to increase daily throughput, capturing 62.5k ETB net profit/month.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="timeline-item">
+          <div class="timeline-dot-wrapper">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <div class="timeline-content-card">
+            <div class="timeline-date">June 2024 – August 2025</div>
+            <h3 class="timeline-role">Procurement Agent</h3>
+            <div class="timeline-org">Jeterm Trading PLC</div>
+            <ul class="timeline-bullets">
+              <li class="timeline-bullet">Analyzed supply chain unit economics, vendor cost structures and transit timelines across 10+ enterprise contracts.</li>
+              <li class="timeline-bullet">Formulated statistical strategies that elevated proposal win-rates and generated 300,000 ETB in monthly value.</li>
+              <li class="timeline-bullet">Oversaw rigorous quality assurance and customs compliance protocols for imported specialized goods.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: INTERACTIVE TERMINAL ("BILISUMA CLI")
+       ========================================================================== -->
+  <section class="section" id="terminal-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-pretitle">Developer &amp; Faculty Console</div>
+        <h2 class="section-title">Interactive Terminal Environment</h2>
+        <p class="section-desc">
+          For technical reviewers, faculty, and engineers: explore applicant background, exam verification hashes, and algorithms directly through this browser-native command shell.
+        </p>
+      </div>
+
+      <div class="terminal-wrapper">
+        <div class="terminal-header">
+          <div class="gs-terminal-dots">
+            <span class="gs-dot red"></span>
+            <span class="gs-dot yellow"></span>
+            <span class="gs-dot green"></span>
+          </div>
+          <span class="term-title">bilisuma@merga-box:~ (bash 5.2 - web emulator)</span>
+          <span style="font-size:0.75rem; color:#64748b;">Type 'help'</span>
+        </div>
+
+        <div class="terminal-body" id="term-body">
+          <div class="term-welcome">
+            Welcome to the Bilisuma Merga Candidate CLI [Release 2026.1]<br>
+            Session authorized. System ready. Type <span style="color:#f8fafc; font-weight:700;">help</span> to inspect candidate profile records.
+          </div>
+        </div>
+
+        <div style="padding: 0.5rem 1.25rem; background: #070b16; border-top: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; flex-wrap: wrap; gap: 0.35rem;">
+          <span style="font-size:0.75rem; color:#64748b; margin-right:0.4rem;">Quick commands:</span>
+          <button class="quick-cmd-btn" data-cmd="sat" type="button">sat</button>
+          <button class="quick-cmd-btn" data-cmd="esslce" type="button">esslce</button>
+          <button class="quick-cmd-btn" data-cmd="research" type="button">research</button>
+          <button class="quick-cmd-btn" data-cmd="drone" type="button">drone</button>
+          <button class="quick-cmd-btn" data-cmd="certs" type="button">certs</button>
+          <button class="quick-cmd-btn" data-cmd="shor 15" type="button">shor 15</button>
+          <button class="quick-cmd-btn" data-cmd="contact" type="button">contact</button>
+        </div>
+
+        <div class="term-input-line">
+          <span class="term-prompt">bilisuma@merga-box:~$</span>
+          <input type="text" id="term-input" class="term-input" placeholder="Enter command (e.g. 'sat', 'drone', 'shor 21')..." autocomplete="off" spellcheck="false">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: ABOUT BILISUMA, PHILOSOPHY & ASPIRATIONS
+       ========================================================================== -->
+  <section class="section section-alt" id="about">
+    <div class="container about-grid">
+      <div class="about-photo-card">
+        <img src="assets/images/bilisuma_presenting.jpg" alt="Bilisuma presenting his drone prototype at EGATE robotics camp">
+      </div>
+
+      <div class="about-text-content">
+        <div class="section-pretitle">Personal Statement &amp; Aspirations</div>
+        <h3>Curiosity Rooted in Hard Reality</h3>
+        <div class="about-paragraphs">
+          <p>
+            I grew up in Oromia, Ethiopia. At ODA Special Boarding School, I discovered that true engineering is defined by what you can accomplish with severe constraints.
+          </p>
+          <p>
+            When building my autonomous drone, my primary obstacle was fitting complex spatial coordinate vectors into the 2 KB SRAM of an 8-bit ATmega328P microcontroller without crashing the stack. Solving that problem required designing an offline GIS downsampler in Python, packing 8-byte structs and writing an 8-state deterministic C++ state machine.
+          </p>
+        </div>
+
+        <div class="about-pillars">
+          <div class="pillar-box">
+            <div class="pillar-title">☕ Ethiopian Coffee Culture</div>
+            <div class="pillar-desc"></div>
+          </div>
+          <div class="pillar-box">
+            <div class="pillar-title">⚽ Competitive Football</div>
+            <div class="pillar-desc"></div>
+          </div>
+          <div class="pillar-box">
+            <div class="pillar-title">🌌 Star Wars &amp; Sci-Fi</div>
+            <div class="pillar-desc"></div>
+          </div>
+          <div class="pillar-box">
+            <div class="pillar-title">🌍 Educational Equity</div>
+            <div class="pillar-desc"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: CONTACT & ADMISSIONS INQUIRY
+       ========================================================================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-pretitle">Get in Touch</div>
+        <h2 class="section-title">Direct Admissions &amp; Research Inquiries</h2>
+        <p class="section-desc">
+          I welcome conversations with university admissions officers, prospective faculty advisors, research collaborators, and fellow engineers.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <div class="contact-item">
+            <div class="contact-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-item-title">Official Email</div>
+              <a href="mailto:jabesabilisuma@gmail.com" class="contact-item-val">jabesabilisuma@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-item-title">Telephone / WhatsApp</div>
+              <a href="tel:+251913182820" class="contact-item-val">+251 913 182 820</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="contact-item-title">Current Location</div>
+              <div class="contact-item-val">Sheger City / Adama, Oromia, Ethiopia</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+            </div>
+            <div>
+              <div class="contact-item-title">Preprint &amp; Research Index</div>
+              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4992090" target="_blank" rel="noopener noreferrer" class="contact-item-val">
+                SSRN Author ID: 4992090 ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Direct Pre-filled Mailer Form -->
+        <div class="contact-form-card">
+          <form id="admissions-contact-form">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Name</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="e.g. Dr. Eleanor Vance / Admissions Officer" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-institution" class="form-label">University / Institution</label>
+              <input type="text" id="contact-institution" class="form-input" placeholder="e.g. MIT, Stanford, Harvard, Caltech" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Your Email</label>
+              <input type="email" id="contact-email" class="form-input" placeholder="admissions@university.edu" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message / Inquiry</label>
+              <textarea id="contact-message" class="form-textarea" placeholder="Hello Bilisuma, we reviewed your quantum research paper and autonomous drone flight system..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Open Direct Email Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-copy">
+          © 2026 Bilisuma Jabesa Merga. All research and engineering documentation verified.
+          <br>Static deployment natively engineered for GitHub Pages (zero backend dependencies).
+        </div>
+        <div style="display:flex; gap:1rem; align-items:center;">
+          <a href="#hero" class="btn btn-secondary btn-sm">↑ Back to Top</a>
+          <a href="assets/docs/Bilisuma_Merga_CV.pdf" download class="btn btn-outline-cyan btn-sm">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL: LIGHTBOX VIEWER (CERTIFICATES, SCHEMATICS & LAB PHOTOS)
+       ========================================================================== -->
+  <div class="modal-overlay" id="lightbox-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Document Inspection</h3>
+        <button class="modal-close-btn" id="modal-close-btn" type="button" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <img src="" alt="" id="modal-image" class="modal-img-preview">
+        <div id="modal-desc" style="color:var(--text-secondary); margin-bottom:1rem;"></div>
+        <div style="text-align:right;">
+          <a href="#" target="_blank" rel="noopener noreferrer" id="modal-doc-link" class="btn btn-primary btn-sm">
+            Open Original File / Verification ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL: ADMISSIONS EXECUTIVE DECK (QUICK REVIEW FOR COMMITTEE)
+       ========================================================================== -->
+  <div class="modal-overlay" id="admissions-deck-modal" role="dialog" aria-modal="true" aria-labelledby="deck-modal-title">
+    <div class="modal-card" style="max-width:820px;">
+      <div class="modal-header">
+        <h3 class="modal-title" id="deck-modal-title">Admissions Officer 90-Second Briefing</h3>
+        <button class="modal-close-btn" id="deck-close-btn" type="button" aria-label="Close briefing modal">✕</button>
+      </div>
+      <div class="modal-body" style="line-height:1.7;">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1.5rem;">
+          <div style="background:#090e1b; padding:1rem; border-radius:8px; border:1px solid rgba(56,189,248,0.2);">
+            <div style="font-size:0.75rem; color:#64748b; text-transform:uppercase;">Candidate Profile</div>
+            <div style="font-size:1.1rem; font-weight:700; color:#f8fafc;">Bilisuma Jabesa Merga</div>
+            <div style="font-size:0.85rem; color:#38bdf8;">Sheger City / Adama, Ethiopia</div>
+            <div style="font-size:0.8rem; color:#94a3b8; margin-top:0.4rem;">High School: ODA Special Boarding School (Grad: Aug 2024)</div>
+          </div>
+          <div style="background:#090e1b; padding:1rem; border-radius:8px; border:1px solid rgba(16,185,129,0.2);">
+            <div style="font-size:0.75rem; color:#64748b; text-transform:uppercase;">Standardized Testing</div>
+            <div style="font-size:1.1rem; font-weight:700; color:#10b981;">SAT 1580 / 1600 (&gt;99th %ile)</div>
+            <div style="font-size:0.85rem; color:#94a3b8;">Math: 790 • Reading &amp; Writing: 790</div>
+            <div style="font-size:0.8rem; color:#94a3b8; margin-top:0.4rem;">ESSLCE National Exam: 100/100 Math (Rank #14 in Nation)</div>
+          </div>
+        </div>
+
+        <h4 style="color:#f8fafc; margin-bottom:0.4rem;">Intellectual Vitality &amp; Authentic Achievements:</h4>
+        <ul style="margin-left:1.25rem; color:#94a3b8; font-size:0.92rem; margin-bottom:1.5rem; display:flex; flex-direction:column; gap:0.4rem;">
+          <li><strong style="color:#f8fafc;">Quantum Computing Research:</strong> Published review paper on Shor's Algorithm and RSA cryptography on SSRN (Elsevier); achieved Top 10 download ranking in Theoretical CS in month 1.</li>
+          <li><strong style="color:#f8fafc;">Avionics Flight Controller:</strong> Built an autonomous GPS drone utilizing an ATmega328P with only 2KB SRAM. Devised a Python GIS trajectory planner and C++ deterministic 8-state FSM consuming merely 682 bytes of RAM.</li>
+          <li><strong style="color:#f8fafc;">National Leadership &amp; Mentorship:</strong> Selected from 500+ candidates to lead research pedagogy for 300+ secondary students at the Teen Research Association. Tutored rural 7th graders to elevate Grade 8 national exam scores by 10%.</li>
+          <li><strong style="color:#f8fafc;">Economic Practicality:</strong> Built predictive demand forecasting for a 2,000 kg/day coffee trading business, cutting product waste by 15%.</li>
+        </ul>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem; padding-top:1rem; border-top:1px solid var(--border-subtle);">
+          <a href="assets/docs/Bilisuma_Merga_CV.pdf" download class="btn btn-primary btn-sm">
+            Download Official CV (PDF)
+          </a>
+          <a href="mailto:jabesabilisuma@gmail.com?subject=Undergraduate%20Admissions%20Interview%20Invitation" class="btn btn-secondary btn-sm">
+            Invite to Interview (Email)
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  
+  <!-- Custom Logic Scripts -->
+  <script src="drone-sim.js"></script>
+  <script src="shor-sim.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
